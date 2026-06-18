@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ds-worker" />
+        <module name="ds-common" />
+        <module name="ds-protocol" />
+        <module name="ds-scheduler" />
+        <module name="ds-system" />
+        <module name="ds-server" />
+        <module name="ds-task" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ds-common" options="-parameters" />
+      <module name="ds-protocol" options="-parameters" />
+      <module name="ds-scheduler" options="-parameters" />
+      <module name="ds-server" options="-parameters" />
+      <module name="ds-system" options="-parameters" />
+      <module name="ds-task" options="-parameters" />
+      <module name="ds-worker" options="-parameters" />
+    </option>
+  </component>
+</project>
