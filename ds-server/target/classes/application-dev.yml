@@ -7,6 +7,15 @@ spring:
   flyway:
     enabled: false
     locations: classpath:db/migration
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
 
 mybatis-plus:
   configuration:
