@@ -108,7 +108,7 @@ public class StaffOrgService {
 
         // 重新计算组织的 centerName、centerHead（仅 team 类型需要）
         for (StaffOrganization org : allOrgs) {
-            if (org.getType() != null && org.getType() == 4 && org.getCtId() != null) {
+            if (org.getCtId() != null) {
                 StaffOrganization parentOrg = orgMap.get(org.getCtId());
                 if (parentOrg != null) {
                     org.setCenterName(parentOrg.getTitle());
@@ -119,5 +119,5 @@ public class StaffOrgService {
         staffOrganizationDao.saveAll(allOrgs);
     }
 
-    
+
 }

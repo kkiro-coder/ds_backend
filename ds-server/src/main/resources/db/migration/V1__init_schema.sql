@@ -38,7 +38,7 @@ create table sys_staff_organization
 )
     comment '员工信息表' charset = utf8mb4;
 
-    create table sys_staff_organization_standard
+    create table sys_staff_org_std
 (
     id          int auto_increment comment '主键'
         primary key,
@@ -57,7 +57,7 @@ create table sys_staff_organization
 )
     comment '组织架构信息表标准' charset = utf8mb4;
 
-    create table sys_staff_info_standard
+    create table sys_staff_info_std
 (
     id          int auto_increment comment '主键'
         primary key,
